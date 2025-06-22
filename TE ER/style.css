@@ -1,0 +1,262 @@
+    body {
+      margin: 0;
+      background-color: #28100B;
+    }
+
+    .text-logo {
+      font-family: 'Inknut Antiqua', serif;
+      font-weight: bold;
+      font-size: 2.5rem;
+      line-height: 0.8;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      margin-right: 0.2rem;
+    }
+
+    .text-logo .top,
+    .text-logo .bottom {
+      display: block;
+      text-align: left;
+    }
+
+    .logo-img {
+      height: 50px; /* Sesuaikan ukuran gambar daun */
+      margin-left: -5px; /* Agar menyatu dengan huruf A */
+      margin-top: 10px;  /* Geser sedikit ke bawah biar sejajar dengan A bawah */
+    }
+
+    
+    header {
+      background-image: url('img/kopi_bg2.jpg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      height: 100px;
+    }
+    
+    .overlay {
+      height: 100%;
+      display: flex;
+      align-items: center;
+    }
+    
+    .container {
+      display: flex;
+      gap: 1.5rem;
+      align-items: center;
+      width: 100%;
+      padding: 0 2rem;
+    }
+    
+    .logo {
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+
+    .nav{
+      display: flex;
+      gap: 4.5rem;
+      align-items:center ;
+    }
+
+    .nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 2rem;
+      font-weight: bold;
+      transition: color 0.3s ease;
+      font-size: 1.5rem;
+      font-family: 'Inria Sans', sans-serif;
+      position: relative;
+    }
+
+    .nav a:hover {
+      color: #ffd700;
+    }
+
+    .nav a.active-link::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -5px; /* jarak di bawah teks */
+      width: 100%;
+      height: 2px;
+      background-color: #D9A25F;
+      transition: width 0.3s ease;
+    }
+
+    .barista .kata h1 {
+      color: white;
+      font-family: 'Inria Sans', sans-serif;
+      font-size: 2rem;
+    }
+
+    .barista {
+      display: flex;
+      flex-direction: row;  /* ← ini kunci untuk sejajar horizontal */
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 1rem;
+      gap: 2rem; /* jarak antar teks dan gambar */
+      padding-bottom: 0rem;
+    }
+
+    .barista img {
+      width: 498.4px;
+      height: 623px;
+      margin-top: 0rem;
+      margin-left: 2rem;
+      margin-right: 1rem;
+      transform: scaleX(-1);
+    }
+
+    .duakopi{
+      margin-bottom: 2rem;
+    }
+
+    .duakopi img {
+      width: 464px;
+      height: 403px;
+      margin-left: 2rem;
+    }
+
+    .kata {
+      color: white;
+      margin-top: 0rem;
+      margin-left: 1.5rem;
+      font-family: 'Inria Sans', sans-serif;
+      font-size: 1.5rem;
+      flex: 1;
+      max-width: 65%;
+    }
+    
+    .dropdown {
+      background-color: #3E2214;
+      width: 100%;
+      padding: 0.5rem;
+      /* display: none; */
+      position: absolute;
+      top: 100px;
+      left: auto;
+      right: auto;
+      background-color: rgba(26, 14, 14, 0.7);
+      backdrop-filter: blur(8px);
+      padding: 0rem;
+      border-radius: 10px;
+      z-index: 999;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+      font-family: 'Inria Sans', sans-serif;
+      min-height: 200px;
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      transition: all 0.4s ease;
+      pointer-events: none;
+    }
+
+    .dropdown.show{
+      max-height: 300px;
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    #dropmenu, #dropcoffee, #dropkhouse, #dropkaward, #dropabout{
+      position: absolute;
+      z-index: 999;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+      padding: 0px;
+      border-radius: 8px;
+    }
+    
+    .dropdown ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      font-size: 1.35rem;
+    }
+    
+    .dropdown li p{
+      list-style: none;
+      margin-top: 5px;  
+      margin-left: 2rem;
+      color: white;
+    }
+
+    .dropdown li a {
+      text-decoration: none;
+      color: white;
+      margin-left: 2rem;
+    }
+
+    .dropdown ul li {
+      margin: 1rem 0;
+    }
+
+    .dropdown ul li a {
+      color: white;
+      text-decoration: none;
+      font-family: 'Inria Sans', sans-serif;
+      transition: color 0.3s ease;
+      display: block;
+    }
+
+    .dropdown ul li a:hover {
+      color: #D9A25F;
+      text-decoration: underline;
+    }
+
+    .location-item{
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .location-item img{
+      width: 42px;
+      height: 60px;
+    }
+
+    .social-follow {
+      display: flex;
+      align-items: center;
+      gap: 0.1rem;
+      margin-left: 2rem;
+      margin-top: 0.3rem;
+      font-family: 'Inria Sans', sans-serif;
+      font-size: 1.3rem;
+      color: white;
+    }
+
+    .social-follow img {
+      width: 25px;
+      height: 25px;
+      transition: transform 0.3s ease;
+      filter: brightness(0) invert(1); /* putihkan ikon */
+    }
+
+    .social-follow img:hover {
+      transform: scale(1.2);
+      filter: brightness(1.5);
+    }
+
+
+    
+
+    .footer{
+      border-top: 1px solid white;
+      color: white;
+      text-align: center;
+      /* padding: 1rem 1rem; */
+      font-family: 'inria sans', sans-serif;
+      font-size: 1.1rem;
+      background-color: #28100B;
+      width: 1300px;
+    }
+
+    .footer a{
+      text-decoration: none;
+      color: white;
+    }
+
