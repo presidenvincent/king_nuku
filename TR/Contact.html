@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="Contact.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="images/AMBAMUSIC.3.png" width="150px">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="Products.html">Products</a></li>
+                        <li><a href="Team.html">Team</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <img src="cart.png" width="30px" height="30px">
+           </div>
+
+
+           <main>
+            <!-- Formulir Kontak -->
+            <section class="contact-form">
+                <h2>Hubungi Kami</h2>
+                <p>Isi formulir di bawah ini untuk menghubungi kami</p>
+                <form action="proses_kontak" method="post">
+                    <div class="form-group">
+                        <label for="nama">Nama:</label>
+                        <input type="text" name="nama" id="nama" placeholder="Masukkan nama anda" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="text" name="email" id="email" placeholder="Masukkan email anda" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="pesan">Pesan:</label>
+                        <textarea name="pesan" id="pesan" placeholder="Tulis pesan anda di sini" rows="5" required></textarea>
+                    </div>
+                    <button type="submit">Kirim Pesan</button>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>&copy;Copyrigth 2024 - AmbaMusic PTI Kelompok 11</p>
+        </footer>
+</body>
+</html>
